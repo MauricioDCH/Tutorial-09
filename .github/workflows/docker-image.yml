@@ -20,8 +20,8 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag mauricioDCH/tutorial-09:latest
+      run: docker build . --file Dockerfile --tag mdcorreah/express-randomquotes:latest
       
     - name: Docker Push
-      run: docker push mauricioDCH/tutorial-09
+      run: docker push mdcorreah/express-randomquotes
 
